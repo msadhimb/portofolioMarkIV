@@ -1,0 +1,123 @@
+.particles{
+    position: relative;
+    z-index: 0;
+    height: 720px;
+}
+.skill{
+    padding: 5px 5px;
+    background-color: #2C3333;
+    height: 730px;
+}
+
+.skillProgress{
+    margin-top: -700px;
+    z-index: 3;
+    position: relative;
+}
+
+/* html css */
+.circular-progress-html-css{
+    position: relative;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background: conic-gradient(#d51e46, 260deg, #ededed 0deg);
+}
+
+.circular-progress-html-css::before{
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #2C3333;
+}
+
+.progress-value-html-css{
+    position: relative;
+}
+
+/* php */
+.circular-progress-php{
+    position: relative;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background: conic-gradient(#d51e46, 220deg, #ededed 0deg);
+}
+
+.circular-progress-php::before{
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #2C3333;
+}
+
+.progress-value-php{
+    position: relative;
+}
+
+/* javascript */
+.circular-progress-javascript{
+    position: relative;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background: conic-gradient(#d51e46, 180deg, #ededed 0deg);
+}
+
+.circular-progress-javascript::before{
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #2C3333;
+}
+
+.progress-value-javascript{
+    position: relative;
+}
+
+/* english */
+.circular-progress-english{
+    position: relative;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background: conic-gradient(#d51e46, 180deg, #ededed 0deg);
+}
+
+.circular-progress-english::before{
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #2C3333;
+}
+
+.progress-value-english{
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .particles{
+        position: relative;
+        z-index: 0;
+        height: 250px;
+    }
+    .skill{
+        padding: 5px 5px;
+        background-color: #2C3333;
+        height: 260px;
+    }
+
+    .skillProgress{
+        margin-top: -225px;
+        z-index: 3;
+        position: relative;
+    }
+}
