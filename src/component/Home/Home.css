@@ -1,0 +1,9 @@
+.aboutDesc{
+    text-align: center;
+}
+
+@media (min-width: 992px){
+    .aboutDesc{
+        text-align: start;
+    }
+}

@@ -78,8 +78,8 @@ export default class Project extends Component {
                         <h2>Project</h2>
                     </div>
                     <div className="row d-flex justify-content-center m-0">
-                        <div className="d-flex justify-content-start mt-5 mb-3">
-                            <h3>HTML, CSS (Bootstrtap) & Javascript</h3>
+                        <div className="d-flex text-start mt-5 mb-3">
+                            <h4>HTML, CSS (Bootstrtap) & Javascript</h4>
                         </div>
                         
                         <Slider {...settings}>
@@ -90,8 +90,8 @@ export default class Project extends Component {
                         }
                         </Slider>
 
-                        <div className="d-flex justify-content-start mb-3" style={{marginTop: '80px'}}>
-                            <h3>HTML, CSS (Bootstrap) & PHP</h3>
+                        <div className="d-flex text-start mb-3" style={{marginTop: '80px'}}>
+                            <h4>HTML, CSS (Bootstrap) & PHP</h4>
                         </div>
                         <Slider {...settings}>
                         {
@@ -100,8 +100,8 @@ export default class Project extends Component {
                             })
                         }
                         </Slider>
-                        <div className="d-flex justify-content-start mb-3" style={{marginTop: '80px'}}>
-                            <h3>CI</h3>
+                        <div className="d-flex text-start mb-3" style={{marginTop: '80px'}}>
+                            <h4>Code Igniter 4 (PHP Framework)</h4>
                         </div>
 
                         <Slider {...settings}>

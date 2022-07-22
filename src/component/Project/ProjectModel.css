@@ -2,3 +2,8 @@
     background-color: #395B64;
     color: white;
 }
+
+.btnDemo:hover{
+    background-color: #2b474f;
+    color: white;
+}
