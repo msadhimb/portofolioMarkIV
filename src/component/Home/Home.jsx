@@ -22,6 +22,7 @@ const Home = () => {
                         <a className='btn ms-3' href=""><i className="fa-brands fa-whatsapp" style={{fontSize: '25px', color: 'green'}}></i></a>
                         <a className='btn ms-3' href="https://www.youtube.com/channel/UCVnQ_F6_11x6DNxuAFIVqtA"><i className="fa-brands fa-youtube" style={{fontSize: '25px', color: 'red'}}></i></a>
                         <a className='btn ms-3' href="https://github.com/msadhimb"><i className="fa-brands fa-github" style={{fontSize: '25px', color: 'grey'}}></i></a>
+                        
                     </div>
                     <div className="col-md-5 p-0">
                         <img src={Me} alt="" style={{width: '400px'}} className= 'rounded-circle mx-auto d-block'/>
