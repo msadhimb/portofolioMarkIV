@@ -43,7 +43,9 @@ export default class Project extends Component {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: false
+                    dots: false,
+                    autoplay: false,
+                    autoplaySpeed: 3000
                   }
                 },
                 {
@@ -52,7 +54,9 @@ export default class Project extends Component {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
-                    dots: false
+                    dots: false,
+                    autoplay: false,
+                    autoplaySpeed: 3000
                   }
                 },
                 {
@@ -60,7 +64,9 @@ export default class Project extends Component {
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    dots: false
+                    dots: false,
+                    autoplay: false,
+                    autoplaySpeed: 3000
                   }
                 }
               ]
