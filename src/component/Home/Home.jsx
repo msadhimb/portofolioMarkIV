@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <section id='about'>
         <HeaderNav/>
-            <Container>
+            <Container style={{overflowX: 'hidden'}}>
                 <div className="row d-flex justify-content-center align-items-center" style={{paddingTop: '120px'}}>
                     <div className="col-md-5 text-start" style={{fontSize: '15px'}}>
                         <h1>Muhamad Salman Adhim Baqy</h1>

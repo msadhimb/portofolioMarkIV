@@ -5,7 +5,7 @@ import Udinus from './udinus.jpg'
 const Edu = () => {
   return (
     <section id='edu'>
-      <Container>
+      <Container style={{overflowX: 'hidden'}}>
           <h2 style={{paddingTop: '100px'}}>Education</h2>
           <div className="row d-flex justify-content-center mt-5 ">
               <div className="col-md-5 mt-3">

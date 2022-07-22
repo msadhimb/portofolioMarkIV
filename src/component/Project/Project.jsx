@@ -73,11 +73,11 @@ export default class Project extends Component {
         };
         return (
             <section id="projects">
-                <Container style={{paddingTop: '100px'}}>
+                <Container style={{paddingTop: '100px', overflowX: 'hidden'}}>
                     <div className="d-flex justify-content-center">
                         <h2>Project</h2>
                     </div>
-                    <div className="row d-flex justify-content-center">
+                    <div className="row d-flex justify-content-center m-0">
                         <div className="d-flex justify-content-start mt-5 mb-3">
                             <h3>HTML, CSS (Bootstrtap) & Javascript</h3>
                         </div>

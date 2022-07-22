@@ -6,7 +6,7 @@ const Footer = () => {
   return (
         <>
             <hr  className='pembatas'/>
-            <Container>
+            <Container style={{overflowX: 'hidden'}}>
                 <div>
                     <div className="row d-flex justify-content-around align-items-center">
                         <div className="col-md-3">
