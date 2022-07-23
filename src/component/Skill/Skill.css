@@ -103,6 +103,26 @@
     position: relative;
 }
 
+@media (min-width: 768px) {
+    .particles{
+        position: relative;
+        z-index: 0;
+        height: 250px;
+    }
+    .skill{
+        padding: 5px 5px;
+        background-color: #2C3333;
+        height: 260px;
+    }
+
+    .skillProgress{
+        margin-top: -225px;
+        z-index: 3;
+        position: relative;
+    }
+
+}
+
 @media (min-width: 992px) {
     .particles{
         position: relative;

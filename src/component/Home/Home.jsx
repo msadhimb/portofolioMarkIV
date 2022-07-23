@@ -24,8 +24,8 @@ const Home = () => {
                         <a className='btn ms-3' href="https://github.com/msadhimb"><i className="fa-brands fa-github" style={{fontSize: '25px', color: 'grey'}}></i></a>
                         
                     </div>
-                    <div className="col-md-5 p-0">
-                        <img src={Me} alt="" style={{width: '400px'}} className= 'rounded-circle mx-auto d-block'/>
+                    <div className="col-md-6 p-0">
+                        <img src={Me} alt="" className= 'rounded-circle mx-auto d-block image'/>
                     </div>
                 </div>
             </Container>

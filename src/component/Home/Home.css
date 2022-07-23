@@ -2,8 +2,29 @@
     text-align: center;
 }
 
+.image{
+    margin-top: 50px;
+    width: 350px;
+}
+
+@media (min-width: 768px){ 
+    .aboutDesc{
+        text-align: start;
+    }
+
+    .image{
+        margin-top: 0px;
+        width: 350px;
+    }
+}
+
 @media (min-width: 992px){
     .aboutDesc{
         text-align: start;
+    }
+
+    .image{
+        margin-top: 0px;
+        width: 400px;
     }
 }

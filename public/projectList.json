@@ -20,7 +20,7 @@
             "id":3,
             "gambar": "projectPicts/3.png",
             "title": "Mini E-Commerce",
-            "desc" : "The project for UAS 3rd Semester. Im working on Front End and Back End.",
+            "desc" : "The project for UAS 3rd Semester. I'm working on Front End and Back End.",
             "linkDemo": "http://yourhead.epizy.com/",
             "linkGithub": "https://github.com/msadhimb/SalmanStore"
         },
@@ -28,7 +28,7 @@
             "id":4,
             "gambar": "projectPicts/4.png",
             "title": "My Playlist",
-            "desc" : "This is the project that i develop to fill in spare time. Im working on Front End and Back End.",
+            "desc" : "This is the project that I develop to fill in spare time. I'm working on Front End and Back End.",
             "linkDemo": "https://msadhimb.github.io/Swiper-Music/",
             "linkGithub": "https://msadhimb.github.io/Swiper-Music/"
         }
@@ -38,7 +38,7 @@
             "id":1,
             "gambar": "projectPicts/5.png",
             "title": "CRUD",
-            "desc" : "This is CRUD without OOP and MVC, just ordinary CRUD using PHP. I made this project to do the assignments given by lecturer. Im working on Front End and Back End.",
+            "desc" : "This is CRUD without OOP and MVC, just ordinary CRUD using PHP. I made this project to do the assignments given by lecturer. I'm working on Front End and Back End.",
             "linkDemo": "https://crud-mysql-mark1.000webhostapp.com/Ordinary%20CRUD/",
             "linkGithub": "https://github.com/msadhimb/UTS-PWL"
         },
@@ -46,7 +46,7 @@
             "id":2,
             "gambar": "projectPicts/6.png",
             "title": "OOP CRUD",
-            "desc" : "This is CRUD without MVC, just OOP CRUD using PHP. I made this project to do the assignments given by lecturer. Im working on Front End and Back End.",
+            "desc" : "This is CRUD without MVC, just OOP CRUD using PHP. I made this project to do the assignments given by lecturer. I'm working on Front End and Back End.",
             "linkDemo": "https://crud-mysql-mark1.000webhostapp.com/OOP%20CRUD/",
             "linkGithub": "https://github.com/msadhimb/Tugas9PWL"
         },
@@ -54,7 +54,7 @@
             "id":3,
             "gambar": "projectPicts/7.png",
             "title": "MVC CRUD",
-            "desc" : "This is CRUD with MVC, MVC CRUD using PHP. I made this project to do the assignments given by lecturer. Im working on Front End and Back End.",
+            "desc" : "This is CRUD with MVC, MVC CRUD using PHP. I made this project to do the assignments given by lecturer. I'm working on Front End and Back End.",
             "linkDemo": "https://crud-mysql-mark1.000webhostapp.com/mvc-example/",
             "linkGithub": "https://github.com/msadhimb/Tugas11PWL"
         },
@@ -62,7 +62,7 @@
             "id":4,
             "gambar": "projectPicts/8.png",
             "title": "FOTOIN",
-            "desc" : "The project that i made to do the assignment given by RPL (Rekayasa Perangkat Lunak) course lecturer. This project using OOP. Im working only on Back End.",
+            "desc" : "The project that I made to do the assignment given by RPL (Rekayasa Perangkat Lunak) course lecturer. This project using OOP. I'm working only on Back End.",
             "linkDemo": "https://fotoincom1234.000webhostapp.com/",
             "linkGithub": "https://github.com/msadhimb/RPL"
         }
@@ -72,7 +72,7 @@
             "id":1,
             "gambar": "projectPicts/9.png",
             "title": "Mini E-Comerce Mark 2",
-            "desc" : "The project that i made to do the assignment given by PWL (Pemrograman Web Lanjut) course lecturer. This project using CodeIgniter 4 Framework. Im working on Front End and Back End.",
+            "desc" : "The project that I made to do the assignment given by PWL (Pemrograman Web Lanjut) course lecturer. This project using CodeIgniter 4 Framework. I'm working on Front End and Back End.",
             "linkDemo": "",
             "linkGithub": "https://gitlab.com/msadhimb/uas-pwl/" 
         }

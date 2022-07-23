@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portofolioMarkII/static/css/main.1b9fd9b1.css",
-    "main.js": "/portofolioMarkII/static/js/main.3a4ead56.js",
-    "static/js/787.b7af92ad.chunk.js": "/portofolioMarkII/static/js/787.b7af92ad.chunk.js",
-    "static/media/me.jpg": "/portofolioMarkII/static/media/me.6a9de4a7b1ec81366615.jpg",
-    "static/media/udinus.jpg": "/portofolioMarkII/static/media/udinus.7b9d905e0f46a24ae0cb.jpg",
-    "static/media/logo.svg": "/portofolioMarkII/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/slick.svg": "/portofolioMarkII/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/portofolioMarkII/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/portofolioMarkII/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/portofolioMarkII/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/portofolioMarkII/index.html",
-    "main.1b9fd9b1.css.map": "/portofolioMarkII/static/css/main.1b9fd9b1.css.map",
-    "main.3a4ead56.js.map": "/portofolioMarkII/static/js/main.3a4ead56.js.map",
-    "787.b7af92ad.chunk.js.map": "/portofolioMarkII/static/js/787.b7af92ad.chunk.js.map"
+    "main.css": "/portofolioMarkIII/static/css/main.83742e58.css",
+    "main.js": "/portofolioMarkIII/static/js/main.1281bbfd.js",
+    "static/js/787.b7af92ad.chunk.js": "/portofolioMarkIII/static/js/787.b7af92ad.chunk.js",
+    "static/media/me.jpg": "/portofolioMarkIII/static/media/me.6a9de4a7b1ec81366615.jpg",
+    "static/media/udinus.jpg": "/portofolioMarkIII/static/media/udinus.7b9d905e0f46a24ae0cb.jpg",
+    "static/media/logo.svg": "/portofolioMarkIII/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/slick.svg": "/portofolioMarkIII/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/portofolioMarkIII/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/portofolioMarkIII/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/portofolioMarkIII/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/portofolioMarkIII/index.html",
+    "main.83742e58.css.map": "/portofolioMarkIII/static/css/main.83742e58.css.map",
+    "main.1281bbfd.js.map": "/portofolioMarkIII/static/js/main.1281bbfd.js.map",
+    "787.b7af92ad.chunk.js.map": "/portofolioMarkIII/static/js/787.b7af92ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b9fd9b1.css",
-    "static/js/main.3a4ead56.js"
+    "static/css/main.83742e58.css",
+    "static/js/main.1281bbfd.js"
   ]
 }

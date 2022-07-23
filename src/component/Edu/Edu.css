@@ -2,8 +2,50 @@
     text-align: center;
 }
 
+.udinusImg{
+    width: 400px;
+}
+
+.desc h3{
+    font-size: 26px;
+}
+
+.desc p {
+    font-size: 15px;
+}
+
+@media (min-width: 768px){
+    .desc{
+        text-align: start;
+    }
+
+    .desc h3{
+        font-size: 18px;
+    }
+
+    .desc p {
+        font-size: 12px;
+    }
+    
+    .udinusImg{
+        width: 300px;
+    }
+}
+
 @media (min-width: 992px){
     .desc{
         text-align: start;
+    }
+
+    .desc h3{
+        font-size: 26px;
+    }
+    
+    .desc p {
+        font-size: 15px;
+    }
+
+    .udinusImg{
+        width: 400px;
     }
 }
