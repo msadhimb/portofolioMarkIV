@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Container from "react-bootstrap/esm/Container";
 import axios from 'axios'
 import ProjectModel from "./ProjectModel";
+import { motion } from "framer-motion";
 
 
 export default class Project extends Component {
@@ -73,7 +74,11 @@ export default class Project extends Component {
         };
         return (
             <section id="projects">
-                <Container style={{paddingTop: '100px', overflowX: 'hidden'}}>
+                <motion.div className="container" style={{paddingTop: '100px', overflowX: 'hidden'}}
+                    initial={{opacity: 0}}
+                    animate={{ opacity: 1}}
+                    transition={{duration: 2, type: 'spring', delay: 1}}
+                >
                     <div className="d-flex justify-content-center">
                         <h2>Project</h2>
                     </div>
@@ -114,7 +119,7 @@ export default class Project extends Component {
                     </div>
                     
                     
-                </Container>
+                </motion.div>
             </section>
         );
     }
