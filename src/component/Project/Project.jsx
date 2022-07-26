@@ -4,8 +4,32 @@ import Container from "react-bootstrap/esm/Container";
 import axios from 'axios'
 import ProjectModel from "./ProjectModel";
 import { motion } from "framer-motion";
+import './Project.css'
 
-
+function SampleNextArrow(props) {
+    const {className, style, onClick} = props
+    return (
+        <div
+            className='slick-arrow slick-next fa-solid fa-angle-right'
+            style={{...style, display: 'block', color: 'black'}}
+            onClick={onClick}
+        >
+        </div>
+    );
+  }
+  
+  const SamplePrevArrow = (props) => {
+    const {className, style, onClick} = props
+    return (
+        <div
+            className='slick-arrow slick-prev fa-solid fa-angle-left'
+            style={{...style, display: 'block', color: 'black'}}
+            onClick={onClick}
+        >
+        </div>
+    );
+}
+    
 export default class Project extends Component {
     state = {
         post:[],
@@ -37,6 +61,9 @@ export default class Project extends Component {
             autoplay: true,
             autoplaySpeed: 3000,
             pauseOnHover: true,
+            arrows: true,
+            nextArrow: <SampleNextArrow />,
+            prevArrow: <SamplePrevArrow />,
             responsive: [
                 {
                   breakpoint: 1024,
@@ -45,8 +72,10 @@ export default class Project extends Component {
                     slidesToScroll: 1,
                     infinite: true,
                     dots: false,
-                    autoplay: true,
-                    autoplaySpeed: 5000
+                    autoplay: false,
+                    arrows: true,
+                    nextArrow: <SampleNextArrow />,
+                    prevArrow: <SamplePrevArrow />
                   }
                 },
                 {
@@ -56,8 +85,10 @@ export default class Project extends Component {
                     slidesToScroll: 1,
                     initialSlide: 1,
                     dots: false,
-                    autoplay: true,
-                    autoplaySpeed: 5000
+                    autoplay: false,
+                    arrows: true,
+                    nextArrow: <SampleNextArrow />,
+                    prevArrow: <SamplePrevArrow />
                   }
                 },
                 {
@@ -66,8 +97,10 @@ export default class Project extends Component {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: false,
-                    autoplay: true,
-                    autoplaySpeed: 5000
+                    autoplay: false,
+                    arrows: true,
+                    nextArrow: <SampleNextArrow />,
+                    prevArrow: <SamplePrevArrow />
                   }
                 }
               ]
@@ -82,12 +115,11 @@ export default class Project extends Component {
                     <div className="d-flex justify-content-center">
                         <h2>Project</h2>
                     </div>
-                    <div className="row d-flex justify-content-center m-0">
+                    <div className="row d-flex justify-content-center m-0" style={{padding: '0 25px'}}>
                         <div className="d-flex text-start mt-5 mb-3">
                             <h4>HTML, CSS (Bootstrtap) & Javascript</h4>
                         </div>
-                        
-                        <Slider {...settings}>
+                        <Slider {...settings} >
                         {
                             this.state.post.map(js => {
                                 return  <ProjectModel key={js.id} data={js}/>
@@ -105,10 +137,10 @@ export default class Project extends Component {
                             })
                         }
                         </Slider>
+
                         <div className="d-flex text-start mb-3" style={{marginTop: '80px'}}>
                             <h4>Code Igniter 4 (PHP Framework)</h4>
                         </div>
-
                         <Slider {...settings}>
                         {
                             this.state.ci.map(ci => {

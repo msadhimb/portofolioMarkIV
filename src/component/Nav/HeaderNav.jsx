@@ -14,12 +14,12 @@ function HeaderNav() {
             <motion.h5 href="#about" className='text-white' style={{fontSize: 18,}}
               initial={{x: 250, opacity: 0}}
               animate={{x: 0, opacity: 1}}
-              transition={{duration: 0.7, type: 'spring'}}
+              transition={{duration: 0.7, type: 'spring', yoyo: Infinity, repeatDelay: 2}}
             >Salman</motion.h5>
             <motion.h5 style={{marginLeft: 50, color: 'white', fontSize: 18, marginTop: -7}}
               initial={{x: -250, opacity: 0}}
               animate={{x: 0, opacity: 1}}
-              transition={{duration: 0.7, type: 'spring'}}
+              transition={{duration: 0.7, type: 'spring', yoyo: Infinity, repeatDelay: 2}}
             >Adhim</motion.h5>
           </div>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
