@@ -8,18 +8,18 @@
     color: white;
 }
 
-.projectImg{
+.projectImg img{
     width: 269px;
 }
 
 @media (min-width: 768px){
-    .projectImg{
+    .projectImg img{
         width: 293px;
     }
 }
 
 @media (min-width: 992px){
-    .projectImg{
+    .projectImg img{
         width: 300px;
     }
 }
