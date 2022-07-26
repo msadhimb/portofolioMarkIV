@@ -7,3 +7,19 @@
     background-color: #2b474f;
     color: white;
 }
+
+.projectImg{
+    width: 269px;
+}
+
+@media (min-width: 768px){
+    .projectImg{
+        width: 293px;
+    }
+}
+
+@media (min-width: 992px){
+    .projectImg{
+        width: 300px;
+    }
+}

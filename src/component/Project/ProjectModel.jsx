@@ -5,7 +5,7 @@ const ProjectModel = (props) => {
   return (
     <div className="row justify-content-evenly d-flex">
         <div className="col-md-5 d-flex justify-content-center align-items-center">
-            <img src={props.data.gambar} alt="pict" style={{width: '300px', marginRight: 20}} className='mx-auto d-block'/>
+            <img src={props.data.gambar} alt="pict" style={{width: '293px'}} className='projectImg d-block'/>
         </div>
         <div className="col-md-6 d-flex justify-content-center flex-column align-items-center">
             <h4>{props.data.title}</h4>
