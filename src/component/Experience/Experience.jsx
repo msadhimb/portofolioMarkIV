@@ -4,6 +4,9 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import abbauf from "./companLogo/abbauf.png";
+import graphie from "./companLogo/graphie.png";
+import udinus from "./companLogo/udinus.png";
 
 const Experience = () => {
   return (
@@ -29,9 +32,22 @@ const Experience = () => {
             <h4 className="vertical-timeline-element-title">
               <strong>Laboratorium Assistant</strong>
             </h4>
-            <h5 className="vertical-timeline-element-subtitle">
-              Universitas Dian Nuswantoro
-            </h5>
+            <div className="d-flex justify-content-center align-items-center">
+              <div
+                style={{ background: "white", padding: 2 }}
+                className="me-2 rounded"
+              >
+                <img
+                  src={udinus}
+                  alt="graphie-logo"
+                  style={{ width: 25 }}
+                  className="d-block mx-auto"
+                />
+              </div>
+              <h5 className="vertical-timeline-element-subtitle">
+                Universitas Dian Nuswantoro
+              </h5>
+            </div>
             <h5 className="mt-2 text-start">Assistant</h5>
             <div>
               <ul>
@@ -57,9 +73,17 @@ const Experience = () => {
             <h4 className="vertical-timeline-element-title">
               <strong>Front End Developer</strong>
             </h4>
-            <h5 className="vertical-timeline-element-subtitle">
-              PT. Graphie Global Interaktif
-            </h5>
+            <div className="d-flex justify-content-center align-items-center">
+              <img
+                src={graphie}
+                alt="graphie-logo"
+                style={{ width: 25 }}
+                className="me-2"
+              />
+              <h5 className="vertical-timeline-element-subtitle">
+                PT. Graphie Global Interaktif
+              </h5>
+            </div>
             <h5 className="mt-2 text-start">Tabpedia</h5>
             <div>
               <ul>
@@ -94,9 +118,17 @@ const Experience = () => {
             <h4 className="vertical-timeline-element-title">
               <strong>Front End Developer</strong>
             </h4>
-            <h5 className="vertical-timeline-element-subtitle">
-              PT. Abbauf Mulia Konsultan Teknologi
-            </h5>
+            <div className="d-flex justify-content-center align-items-center">
+              <img
+                src={abbauf}
+                alt="graphie-logo"
+                style={{ width: 25 }}
+                className="me-2"
+              />
+              <h5 className="vertical-timeline-element-subtitle">
+                PT. Abbauf Mulia Konsultan Teknologi
+              </h5>
+            </div>
 
             <h5 className="mt-2 text-start">WebGIS Intelligence</h5>
             <div>
