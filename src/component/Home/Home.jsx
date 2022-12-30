@@ -60,7 +60,7 @@ class Home extends Component {
               </motion.h3>
               <motion.a
                 className="btn"
-                href="https://www.instagram.com/apwhabl.png/"
+                href="https://www.instagram.com/salmanadhim/"
                 initial={{ x: 250, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, type: "spring", delay: 0.8 }}

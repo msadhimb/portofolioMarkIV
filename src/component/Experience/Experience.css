@@ -1,0 +1,12 @@
+.date-asis {
+  color: black;
+}
+@media (max-width: 768px) {
+  .vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+    margin-top: 8px !important;
+    margin-left: 5px !important;
+  }
+  .date-asis {
+    color: white;
+  }
+}

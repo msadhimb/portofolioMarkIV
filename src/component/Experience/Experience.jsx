@@ -7,6 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import abbauf from "./companLogo/abbauf.png";
 import graphie from "./companLogo/graphie.png";
 import udinus from "./companLogo/udinus.png";
+import "./Experience.css";
 
 const Experience = () => {
   return (
@@ -18,7 +19,7 @@ const Experience = () => {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "rgb(19, 68, 158)", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  rgb(19, 68, 158)" }}
-            dateClassName="text-black text-start"
+            dateClassName="text-start date-asis"
             date="November 2022 - Now"
             iconStyle={{
               background: "rgb(19, 68, 158)",
@@ -34,8 +35,8 @@ const Experience = () => {
             </h4>
             <div className="d-flex justify-content-center align-items-center">
               <div
-                style={{ background: "white", padding: 2 }}
-                className="me-2 rounded"
+                style={{ background: "white", padding: 2, borderRadius: 50 }}
+                className="me-2"
               >
                 <img
                   src={udinus}
@@ -61,6 +62,7 @@ const Experience = () => {
             className="vertical-timeline-element--work"
             dateClassName="text-black"
             date="November 2022 - December 2022"
+            contentArrowStyle={{ borderRight: "7px solid  rgb(209, 46, 57)" }}
             iconStyle={{
               background: "rgb(209, 46, 57)",
               color: "#fff",
@@ -105,6 +107,7 @@ const Experience = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             dateClassName="text-black text-start"
+            contentArrowStyle={{ borderRight: "7px solid  rgb(46, 209, 84)" }}
             date="August 2022 - December 2022"
             iconStyle={{
               background: "rgb(46, 209, 84)",
@@ -135,6 +138,9 @@ const Experience = () => {
               <ul>
                 <li className="text-start">
                   Developing dashboard using CodeIgniter 4
+                </li>
+                <li className="text-start">
+                  Developing dashboard ui using Bootstrap 4
                 </li>
                 <li className="text-start">
                   Push, pull, and merge code using Git
