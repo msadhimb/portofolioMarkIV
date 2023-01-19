@@ -8,6 +8,7 @@ import abbauf from "./companLogo/abbauf.png";
 import graphie from "./companLogo/graphie.png";
 import udinus from "./companLogo/udinus.png";
 import "./Experience.css";
+import sertif from "./assets/sertif.jpg";
 
 const Experience = () => {
   return (
@@ -90,7 +91,7 @@ const Experience = () => {
             <div>
               <ul>
                 <li className="text-start">
-                  Developing dashboard using ReactJS
+                  Developed dashboard using ReactJS
                 </li>
                 <li className="text-start">
                   Managed to make dummy CRUD for testing
@@ -99,7 +100,7 @@ const Experience = () => {
                   Push, pull, and merge code using Git
                 </li>
                 <li className="text-start">
-                  Successfully completed the displacement project
+                  Completed the displacement project successfully
                 </li>
               </ul>
             </div>
@@ -137,18 +138,26 @@ const Experience = () => {
             <div>
               <ul>
                 <li className="text-start">
-                  Developing dashboard using CodeIgniter 4
+                  Developed dashboard using CodeIgniter 4
                 </li>
                 <li className="text-start">
-                  Developing dashboard ui using Bootstrap 4
+                  Developed dashboard ui using Bootstrap 4
                 </li>
                 <li className="text-start">
                   Push, pull, and merge code using Git
                 </li>
                 <li className="text-start">
-                  Successfully work as a team to develop a dashboard
+                  Successfully work as a team to developed a dashboard
                 </li>
               </ul>
+            </div>
+            <div className="d-flex justify-content-end">
+              <a
+                href={sertif}
+                style={{ fontWeight: 500, textDecoration: "none" }}
+              >
+                See Certificate
+              </a>
             </div>
           </VerticalTimelineElement>
         </VerticalTimeline>

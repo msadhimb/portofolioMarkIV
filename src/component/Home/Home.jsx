@@ -11,6 +11,7 @@ import Footer from "../Footer/Footer";
 import "./Home.css";
 import { motion } from "framer-motion";
 import Experience from "../Experience/Experience";
+import cv from "./assets/Muhamad Salman Adhim Baqy - Resume Mark II.pdf";
 
 class Home extends Component {
   render() {
@@ -105,6 +106,20 @@ class Home extends Component {
                   className="fa-brands fa-github"
                   style={{ fontSize: "25px", color: "grey" }}
                 ></i>
+              </motion.a>
+              <motion.a
+                className="btn ms-3 tooltips bottom"
+                href={cv}
+                initial={{ x: 250, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, type: "spring", delay: 1.6 }}
+                download
+              >
+                <i
+                  className="fa-solid fa-file-pdf"
+                  style={{ fontSize: "25px", color: "orange" }}
+                ></i>
+                <span className="tooltip-text">Download CV</span>
               </motion.a>
             </div>
 
