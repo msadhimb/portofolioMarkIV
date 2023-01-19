@@ -27,7 +27,7 @@ class Home extends Component {
     return (
       <section id="about">
         <HeaderNav />
-        <Container style={{ overflowX: "hidden" }}>
+        <Container style={{ overflow: "hidden" }}>
           <div
             className="row d-flex justify-content-center align-items-center"
             style={{ paddingTop: "120px" }}
