@@ -73,14 +73,14 @@ class Home extends Component {
               </motion.a>
               <motion.a
                 className="btn ms-3"
-                href=""
+                href="https://www.linkedin.com/in/muhamad-salman-adhim-baqy-8a065a241"
                 initial={{ x: 250, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, type: "spring", delay: 1 }}
               >
                 <i
-                  className="fa-brands fa-whatsapp"
-                  style={{ fontSize: "25px", color: "green" }}
+                  className="fa-brands fa-linkedin"
+                  style={{ fontSize: "25px", color: "#1d5cc2" }}
                 ></i>
               </motion.a>
               <motion.a
