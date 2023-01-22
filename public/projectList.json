@@ -98,7 +98,7 @@
       "id": 3,
       "gambar": "projectPicts/12.png",
       "title": "CRUD with Firebase Database",
-      "desc": "The project that i made to fill my spare time, this project using ReactJS and MySQL. I'm working on Front End and Back End.",
+      "desc": "The project that i made to fill my spare time, this project using ReactJS and Firebase Store Database. I'm working on Front End and Back End.",
       "linkDemo": "https://crud-firebase-react-jz7cm35tw-msadhimb.vercel.app/",
       "linkGithub": "https://github.com/msadhimb/CRUD-Firebase-ReactJS"
     }
