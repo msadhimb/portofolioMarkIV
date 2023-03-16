@@ -7,6 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import abbauf from "./companLogo/abbauf.png";
 import graphie from "./companLogo/graphie.png";
 import udinus from "./companLogo/udinus.png";
+import Len from "./companLogo/Len.png";
 import "./Experience.css";
 import sertif from "./assets/sertif.jpg";
 
@@ -21,7 +22,49 @@ const Experience = () => {
             contentStyle={{ background: "rgb(19, 68, 158)", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  rgb(19, 68, 158)" }}
             dateClassName="text-start date-asis"
-            date="November 2022 - Now"
+            date="February 2023 - Now"
+            iconStyle={{
+              background: "rgb(19, 68, 158)",
+              color: "#fff",
+              width: "30px",
+              height: "30px",
+              marginTop: "15px",
+              marginLeft: "-15px",
+            }}
+          >
+            <h4 className="vertical-timeline-element-title">
+              <strong>Front End Web Developer</strong>
+            </h4>
+            <div className="d-flex justify-content-center align-items-center">
+              <div
+                style={{ background: "white", padding: 2, borderRadius: 50 }}
+                className="me-2"
+              >
+                <img
+                  src={Len}
+                  alt="graphie-logo"
+                  style={{ width: 25 }}
+                  className="d-block mx-auto"
+                />
+              </div>
+              <h5 className="vertical-timeline-element-subtitle">
+                PT Len Industri (Persero)
+              </h5>
+            </div>
+            {/* <h5 className="mt-2 text-start">Assistant</h5>
+            <div>
+              <ul>
+                <li className="text-start">
+                  Help certain lecturer students who experience errors
+                </li>
+              </ul>
+            </div> */}
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentArrowStyle={{ borderRight: "7px solid  rgb(19, 68, 158)" }}
+            dateClassName="text-end date-asis"
+            date="November 2022 - December 2022"
             iconStyle={{
               background: "rgb(19, 68, 158)",
               color: "#fff",
@@ -61,7 +104,7 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            dateClassName="text-black"
+            dateClassName="text-black text-start"
             date="November 2022 - December 2022"
             contentArrowStyle={{ borderRight: "7px solid  rgb(209, 46, 57)" }}
             iconStyle={{
@@ -84,7 +127,7 @@ const Experience = () => {
                 className="me-2"
               />
               <h5 className="vertical-timeline-element-subtitle">
-                PT. Graphie Global Interaktif
+                PT Graphie Global Interaktif
               </h5>
             </div>
             <h5 className="mt-2 text-start">Tabpedia</h5>
@@ -107,7 +150,7 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            dateClassName="text-black text-start"
+            dateClassName="text-black text-end"
             contentArrowStyle={{ borderRight: "7px solid  rgb(46, 209, 84)" }}
             date="August 2022 - December 2022"
             iconStyle={{
@@ -130,7 +173,7 @@ const Experience = () => {
                 className="me-2"
               />
               <h5 className="vertical-timeline-element-subtitle">
-                PT. Abbauf Mulia Konsultan Teknologi
+                PT Abbauf Mulia Konsultan Teknologi
               </h5>
             </div>
 

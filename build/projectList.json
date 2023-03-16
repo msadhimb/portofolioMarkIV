@@ -75,6 +75,14 @@
       "desc": "The project that I made to do the assignment given by PWL (Pemrograman Web Lanjut) course lecturer. This project using CodeIgniter 4 Framework. I'm working on Front End and Back End.",
       "linkDemo": "",
       "linkGithub": "https://gitlab.com/msadhimb/uas-pwl/"
+    },
+    {
+      "id": 1,
+      "gambar": "projectPicts/13.png",
+      "title": "WebGIS Intelligence",
+      "desc": "This is the project while i'm doing internship at PT. Abbauf Mulia Konsultan Teknologi. I'm working on Front End UI",
+      "linkDemo": "https://intellegence.abbauf.com",
+      "linkGithub": ""
     }
   ],
   "react": [
@@ -101,6 +109,14 @@
       "desc": "The project that i made to fill my spare time, this project using ReactJS and Firebase Store Database. I'm working on Front End and Back End.",
       "linkDemo": "https://crud-firebase-react-jz7cm35tw-msadhimb.vercel.app/",
       "linkGithub": "https://github.com/msadhimb/CRUD-Firebase-ReactJS"
+    },
+    {
+      "id": 4,
+      "gambar": "projectPicts/14.png",
+      "title": "Tabpedia",
+      "desc": "This is the displacement project while i'm doing internship at PT. Graphie Global Interaktif. I'm working on Front End.",
+      "linkDemo": "https://pmdev.tabpedia.com",
+      "linkGithub": ""
     }
   ]
 }
