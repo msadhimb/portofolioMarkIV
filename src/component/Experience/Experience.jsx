@@ -66,7 +66,7 @@ const Experience = () => {
             dateClassName="text-end"
             date="November 2022 - December 2022"
             iconStyle={{
-              background: "rgb(19, 68, 158)",
+              background: "rgb(46,209, 84)",
               color: "#fff",
               width: "30px",
               height: "30px",
