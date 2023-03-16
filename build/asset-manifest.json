@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/portofolioMarkIII/static/css/main.b4360f91.css",
-    "main.js": "/portofolioMarkIII/static/js/main.7aca904f.js",
+    "main.css": "/portofolioMarkIII/static/css/main.b429c162.css",
+    "main.js": "/portofolioMarkIII/static/js/main.00379e31.js",
     "static/js/787.b7af92ad.chunk.js": "/portofolioMarkIII/static/js/787.b7af92ad.chunk.js",
     "static/media/me.jpg": "/portofolioMarkIII/static/media/me.6a9de4a7b1ec81366615.jpg",
     "static/media/me2.jpeg": "/portofolioMarkIII/static/media/me2.494de2a559ef0f03c72a.jpeg",
     "static/media/Muhamad Salman Adhim Baqy - Resume Mark II.pdf": "/portofolioMarkIII/static/media/Muhamad Salman Adhim Baqy - Resume Mark II.53fcd99a8d319c4fce7b.pdf",
     "static/media/udinus.png": "/portofolioMarkIII/static/media/udinus.a419e846eb77662cded2.png",
     "static/media/sertif.jpg": "/portofolioMarkIII/static/media/sertif.fca4745dd5d389ba2f8f.jpg",
+    "static/media/Len.png": "/portofolioMarkIII/static/media/Len.af42f8b8d816d3610c5a.png",
     "static/media/udinus.jpg": "/portofolioMarkIII/static/media/udinus.7b9d905e0f46a24ae0cb.jpg",
     "static/media/graphie.png": "/portofolioMarkIII/static/media/graphie.71818504997211fb81bf.png",
     "static/media/abbauf.png": "/portofolioMarkIII/static/media/abbauf.c6d47245189e94b5d668.png",
@@ -17,12 +18,12 @@
     "static/media/slick.ttf": "/portofolioMarkIII/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portofolioMarkIII/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portofolioMarkIII/index.html",
-    "main.b4360f91.css.map": "/portofolioMarkIII/static/css/main.b4360f91.css.map",
-    "main.7aca904f.js.map": "/portofolioMarkIII/static/js/main.7aca904f.js.map",
+    "main.b429c162.css.map": "/portofolioMarkIII/static/css/main.b429c162.css.map",
+    "main.00379e31.js.map": "/portofolioMarkIII/static/js/main.00379e31.js.map",
     "787.b7af92ad.chunk.js.map": "/portofolioMarkIII/static/js/787.b7af92ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4360f91.css",
-    "static/js/main.7aca904f.js"
+    "static/css/main.b429c162.css",
+    "static/js/main.00379e31.js"
   ]
 }
