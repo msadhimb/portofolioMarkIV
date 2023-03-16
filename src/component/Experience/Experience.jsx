@@ -62,7 +62,7 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentArrowStyle={{ borderRight: "7px solid  rgb(19, 68, 158)" }}
+            contentArrowStyle={{ borderRight: "7px solid rgb(46,209, 84)" }}
             dateClassName="text-end"
             date="November 2022 - December 2022"
             iconStyle={{
