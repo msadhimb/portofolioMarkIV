@@ -4,6 +4,8 @@ import HeaderNav from "../Nav/HeaderNav";
 import Container from "react-bootstrap/esm/Container";
 import Me from "./me.jpg";
 import Me2 from "./me2.jpeg";
+import Me3 from "./me3.jpeg";
+import Me4 from "./me4.jpeg";
 import Skill from "../Skill/Skill";
 import Project from "../Project/Project";
 import Edu from "../Edu/Edu";
@@ -135,12 +137,22 @@ class Home extends Component {
               >
                 <Slider {...settings}>
                   <motion.img
-                    src={Me}
+                    src={Me4}
+                    alt=""
+                    className="rounded-circle mx-auto d-block"
+                  />
+                  <motion.img
+                    src={Me3}
                     alt=""
                     className="rounded-circle mx-auto d-block"
                   />
                   <motion.img
                     src={Me2}
+                    alt=""
+                    className="rounded-circle mx-auto d-block"
+                  />
+                  <motion.img
+                    src={Me}
                     alt=""
                     className="rounded-circle mx-auto d-block"
                   />
