@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/portofolioMarkIII/static/css/main.b429c162.css",
-    "main.js": "/portofolioMarkIII/static/js/main.16c44fc6.js",
+    "main.js": "/portofolioMarkIII/static/js/main.583b17b7.js",
     "static/js/787.b7af92ad.chunk.js": "/portofolioMarkIII/static/js/787.b7af92ad.chunk.js",
+    "static/media/senatMahasiswa.PNG": "/portofolioMarkIII/static/media/senatMahasiswa.7b0fd2201a28298bb79d.PNG",
     "static/media/me.jpg": "/portofolioMarkIII/static/media/me.6a9de4a7b1ec81366615.jpg",
     "static/media/me2.jpeg": "/portofolioMarkIII/static/media/me2.494de2a559ef0f03c72a.jpeg",
     "static/media/Muhamad Salman Adhim Baqy - Resume Mark II.pdf": "/portofolioMarkIII/static/media/Muhamad Salman Adhim Baqy - Resume Mark II.53fcd99a8d319c4fce7b.pdf",
@@ -21,11 +22,11 @@
     "static/media/slick.woff": "/portofolioMarkIII/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portofolioMarkIII/index.html",
     "main.b429c162.css.map": "/portofolioMarkIII/static/css/main.b429c162.css.map",
-    "main.16c44fc6.js.map": "/portofolioMarkIII/static/js/main.16c44fc6.js.map",
+    "main.583b17b7.js.map": "/portofolioMarkIII/static/js/main.583b17b7.js.map",
     "787.b7af92ad.chunk.js.map": "/portofolioMarkIII/static/js/787.b7af92ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b429c162.css",
-    "static/js/main.16c44fc6.js"
+    "static/js/main.583b17b7.js"
   ]
 }
