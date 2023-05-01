@@ -18,6 +18,7 @@ const Experience = () => {
       <div className="container">
         <h2 className="mt-5 mb-3">Work Experience</h2>
         <VerticalTimeline lineColor="#474747" animate={true}>
+          {/* Len */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "rgb(19, 68, 158)", color: "#fff" }}
@@ -93,6 +94,10 @@ const Experience = () => {
                 <li className="text-start">
                   Developed dashboard admin and dashboard user using Bootstrap
                   CSS and React JS.
+                </li>
+                <li className="text-start">
+                  Developed dashboard admin and user database and making Rest
+                  API using CodeIgniter 4.
                 </li>
                 <li className="text-start">
                   Developed REST API to managed data.
