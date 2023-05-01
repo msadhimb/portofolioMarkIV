@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/portofolioMarkIII/static/css/main.b429c162.css",
-    "main.js": "/portofolioMarkIII/static/js/main.9edfb8ce.js",
+    "main.js": "/portofolioMarkIII/static/js/main.16c44fc6.js",
     "static/js/787.b7af92ad.chunk.js": "/portofolioMarkIII/static/js/787.b7af92ad.chunk.js",
     "static/media/me.jpg": "/portofolioMarkIII/static/media/me.6a9de4a7b1ec81366615.jpg",
     "static/media/me2.jpeg": "/portofolioMarkIII/static/media/me2.494de2a559ef0f03c72a.jpeg",
     "static/media/Muhamad Salman Adhim Baqy - Resume Mark II.pdf": "/portofolioMarkIII/static/media/Muhamad Salman Adhim Baqy - Resume Mark II.53fcd99a8d319c4fce7b.pdf",
+    "static/media/me4.jpeg": "/portofolioMarkIII/static/media/me4.bc7a5708b742819e7f00.jpeg",
     "static/media/udinus.png": "/portofolioMarkIII/static/media/udinus.a419e846eb77662cded2.png",
     "static/media/sertif.jpg": "/portofolioMarkIII/static/media/sertif.fca4745dd5d389ba2f8f.jpg",
+    "static/media/me3.jpeg": "/portofolioMarkIII/static/media/me3.496c31a7a8dd83947bb3.jpeg",
     "static/media/Len.png": "/portofolioMarkIII/static/media/Len.af42f8b8d816d3610c5a.png",
     "static/media/udinus.jpg": "/portofolioMarkIII/static/media/udinus.7b9d905e0f46a24ae0cb.jpg",
     "static/media/graphie.png": "/portofolioMarkIII/static/media/graphie.71818504997211fb81bf.png",
@@ -19,11 +21,11 @@
     "static/media/slick.woff": "/portofolioMarkIII/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portofolioMarkIII/index.html",
     "main.b429c162.css.map": "/portofolioMarkIII/static/css/main.b429c162.css.map",
-    "main.9edfb8ce.js.map": "/portofolioMarkIII/static/js/main.9edfb8ce.js.map",
+    "main.16c44fc6.js.map": "/portofolioMarkIII/static/js/main.16c44fc6.js.map",
     "787.b7af92ad.chunk.js.map": "/portofolioMarkIII/static/js/787.b7af92ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b429c162.css",
-    "static/js/main.9edfb8ce.js"
+    "static/js/main.16c44fc6.js"
   ]
 }
