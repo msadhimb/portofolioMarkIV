@@ -128,8 +128,16 @@ const Experience = () => {
                   textDecoration: "none",
                   color: "green",
                 }}
+                className="me-2"
               >
                 See Project
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1XOUEG_T_VHI-mJagNAhcR_qzd0V8t0Gg/view"
+                style={{ fontWeight: 500, textDecoration: "none" }}
+                className="me-2"
+              >
+                See Certificate
               </a>
             </div>
           </VerticalTimelineElement>
