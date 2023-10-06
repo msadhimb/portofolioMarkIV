@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import HeaderNav from "../Nav/HeaderNav";
 import Container from "react-bootstrap/esm/Container";
-import Me from "./me.jpg";
 import Me2 from "./me2.jpeg";
 import Me3 from "./me3.jpeg";
 import Me4 from "./me4.jpeg";
+import Me5 from "./me5.jpg";
 import Skill from "../Skill/Skill";
 import Project from "../Project/Project";
 import Edu from "../Edu/Edu";
@@ -46,12 +46,22 @@ class Home extends Component {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, type: "spring", delay: 0.8 }}
+                style={{
+                  textAlign: "justify",
+                }}
               >
-                5th-Semester student of Informatics Engineering Study Program,
-                Faculty of Computer Science, Universitas Dian Nuswantoro who is
-                enthusiastic, highly motivated, and a challenge seeker. I am
-                able to create responsive websites using HTML, CSS, Javascript
-                and PHP
+                I'm a 7th-semester Informatics Engineering student at
+                Universitas Dian Nuswantoro. I'm passionate, motivated, and love
+                taking on challenges. I started building websites with HTML,
+                CSS, and JavaScript in my earlier semesters. Now, I've advanced
+                my skills by diving into JavaScript frameworks like React.js and
+                Vue.js, enabling me to create dynamic and interactive web apps.
+                I've also delved into PHP frameworks like Laravel and
+                CodeIgniter 4 (CI4), understanding their inner workings and
+                using them to develop robust web solutions. My academic journey
+                has given me a strong web development foundation, and I'm
+                committed to staying updated with the latest technologies and
+                frameworks to keep pushing boundaries in web development.
               </motion.p>
               <motion.h3
                 className="mt-3"
@@ -137,6 +147,11 @@ class Home extends Component {
               >
                 <Slider {...settings}>
                   <motion.img
+                    src={Me5}
+                    alt=""
+                    className="rounded-circle mx-auto d-block"
+                  />
+                  <motion.img
                     src={Me4}
                     alt=""
                     className="rounded-circle mx-auto d-block"
@@ -148,11 +163,6 @@ class Home extends Component {
                   />
                   <motion.img
                     src={Me2}
-                    alt=""
-                    className="rounded-circle mx-auto d-block"
-                  />
-                  <motion.img
-                    src={Me}
                     alt=""
                     className="rounded-circle mx-auto d-block"
                   />

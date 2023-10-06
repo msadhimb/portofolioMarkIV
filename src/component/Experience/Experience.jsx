@@ -1,24 +1,126 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import abbauf from "./companLogo/abbauf.png";
-import graphie from "./companLogo/graphie.png";
-import udinus from "./companLogo/udinus.png";
-import Len from "./companLogo/Len.png";
-import senatMhsFEBUksw from "./companLogo/senatMahasiswa.PNG";
 import "./Experience.css";
-import sertif from "./assets/sertif.jpg";
+import { db } from "../../firebase";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 
 const Experience = () => {
+  const [data, setData] = useState([]);
+  const dataCollection = collection(db, "experience");
+
+  const getData = async () => {
+    const querySnapshot = await getDocs(
+      query(dataCollection, orderBy("created_at", "desc"))
+    );
+
+    setData(
+      querySnapshot.docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id,
+      }))
+    );
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  console.log(data);
   return (
     <section className="experience">
       <div className="container">
         <h2 className="mt-5 mb-3">Work Experience</h2>
         <VerticalTimeline lineColor="#474747" animate={true}>
-          {/* Len */}
+          {data.map((item, index) => {
+            const desc = item.deskripsi.split("-");
+            return (
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentArrowStyle={
+                  item.status === "selesai"
+                    ? { borderRight: "7px solid  rgb(46, 209, 84)" }
+                    : { borderRight: "7px solid  rgb(19, 68, 158)" }
+                }
+                date={item.tanggal}
+                dateClassName={`date-asis ${
+                  index % 2 === 0 ? "text-start" : "text-end"
+                }`}
+                iconStyle={
+                  item.status === "selesai"
+                    ? {
+                        background: "rgb(46, 209, 84)",
+                        color: "#fff",
+                        width: "30px",
+                        height: "30px",
+                        marginTop: "15px",
+                        marginLeft: "-15px",
+                      }
+                    : {
+                        background: "rgb(19, 68, 158)",
+                        color: "#fff",
+                        width: "30px",
+                        height: "30px",
+                        marginTop: "15px",
+                        marginLeft: "-15px",
+                      }
+                }
+              >
+                <h4 className="vertical-timeline-element-title">
+                  <strong>{item.posisi}</strong>
+                </h4>
+                <div className="d-flex justify-content-center align-items-center">
+                  <img
+                    src={"http://localhost:3000/" + item.gambar}
+                    alt="graphie-logo"
+                    style={{ width: 25 }}
+                    className="me-2"
+                  />
+                  <h5 className="vertical-timeline-element-subtitle">
+                    {item.tempat}
+                  </h5>
+                </div>
+
+                <h5 className="mt-2 text-start">{item.nama_project}</h5>
+                <div>
+                  <ul>
+                    {desc.map((descItem) => {
+                      if (descItem === "") return;
+                      return <li className="text-start">{descItem}</li>;
+                    })}
+                  </ul>
+                </div>
+                <div className="d-flex justify-content-end">
+                  {item.link_project && (
+                    <a
+                      href={item.link_project}
+                      style={{
+                        fontWeight: 500,
+                        textDecoration: "none",
+                        color: "green",
+                      }}
+                      className="me-2"
+                    >
+                      See Project
+                    </a>
+                  )}
+                  {item.sertifikat && (
+                    <a
+                      href={item.sertifikat}
+                      style={{ fontWeight: 500, textDecoration: "none" }}
+                      className="me-2"
+                    >
+                      See Certificate
+                    </a>
+                  )}
+                </div>
+              </VerticalTimelineElement>
+            );
+          })}
+          {/* Len 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "rgb(19, 68, 158)", color: "#fff" }}
@@ -55,7 +157,7 @@ const Experience = () => {
             </div>
           </VerticalTimelineElement>
 
-          {/* UKSW */}
+           UKSW 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             dateClassName="text-black text-end"
@@ -142,7 +244,7 @@ const Experience = () => {
             </div>
           </VerticalTimelineElement>
 
-          {/* Lomba */}
+          {/* Lomba 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             dateClassName="text-black text-start"
@@ -220,7 +322,7 @@ const Experience = () => {
             </div>
           </VerticalTimelineElement>
 
-          {/* Asisten */}
+          {/* Asisten 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentArrowStyle={{ borderRight: "7px solid rgb(46,209, 84)" }}
@@ -264,7 +366,7 @@ const Experience = () => {
             </div>
           </VerticalTimelineElement>
 
-          {/* Graphie */}
+          {/* Graphie 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             dateClassName="text-black text-start"
@@ -312,7 +414,7 @@ const Experience = () => {
             </div>
           </VerticalTimelineElement>
 
-          {/* Abbauf */}
+          {/* Abbauf 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             dateClassName="text-black text-end"
@@ -368,6 +470,7 @@ const Experience = () => {
               </a>
             </div>
           </VerticalTimelineElement>
+          */}
         </VerticalTimeline>
       </div>
     </section>

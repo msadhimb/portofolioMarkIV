@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/esm/Container";
 import "./Skill.css";
 import Particle from "../Particle/Particle";
 import { motion } from "framer-motion";

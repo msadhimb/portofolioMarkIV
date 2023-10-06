@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Container from "react-bootstrap/esm/Container";
 import axios from "axios";
 import ProjectModel from "./ProjectModel";
 import { motion } from "framer-motion";
 import "./Project.css";
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
       className="slick-arrow slick-next fa-solid fa-angle-right"
@@ -18,7 +17,7 @@ function SampleNextArrow(props) {
 }
 
 const SamplePrevArrow = (props) => {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
       className="slick-arrow slick-prev fa-solid fa-angle-left"

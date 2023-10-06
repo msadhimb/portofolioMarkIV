@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/esm/Container";
 import Udinus from "./udinus.jpg";
 import "./Edu.css";
 import { motion } from "framer-motion";
