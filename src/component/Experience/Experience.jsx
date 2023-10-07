@@ -74,7 +74,7 @@ const Experience = () => {
                 </h4>
                 <div className="d-flex justify-content-center align-items-center">
                   <img
-                    src={"http://localhost:3000/" + item.gambar}
+                    src={process.env.PUBLIC_URL + item.gambar}
                     alt="graphie-logo"
                     style={{ width: 25 }}
                     className="me-2"
