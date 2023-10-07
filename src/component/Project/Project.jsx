@@ -33,6 +33,7 @@ const Project = () => {
   const [php, setPhp] = useState([]);
   const [ci, setCi] = useState([]);
   const [react, setReact] = useState([]);
+  const [vue, setVue] = useState([]);
 
   const getData = async () => {
     const response = await getDocs(
@@ -48,23 +49,23 @@ const Project = () => {
     setPhp([]);
     setCi([]);
     setReact([]);
+    setVue([]);
 
     dataTemp.filter((data) => {
-      switch (data.tech) {
-        case "javascript":
-          setPost((post) => [...post, data]);
-          break;
-        case "php":
-          setPhp((php) => [...php, data]);
-          break;
-        case "codeigniter4":
-          setCi((ci) => [...ci, data]);
-          break;
-        case "reactjs":
-          setReact((react) => [...react, data]);
-          break;
-        default:
-          break;
+      if (data.tech.includes("javascript")) {
+        setPost((post) => [...post, data]);
+      }
+      if (data.tech.includes("php")) {
+        setPhp((php) => [...php, data]);
+      }
+      if (data.tech.includes("codeigniter4")) {
+        setCi((ci) => [...ci, data]);
+      }
+      if (data.tech.includes("reactjs")) {
+        setReact((react) => [...react, data]);
+      }
+      if (data.tech.includes("vuejs")) {
+        setVue((vue) => [...vue, data]);
       }
     });
   };
@@ -160,31 +161,69 @@ const Project = () => {
             </React.Fragment>
           )}
 
-          <div className="d-flex text-start mb-3" style={{ marginTop: "80px" }}>
-            <h4>HTML, CSS (Bootstrap) & PHP</h4>
-          </div>
-          <Slider {...settings}>
-            {php.map((php) => {
-              return <ProjectModel key={php.id} data={php} />;
-            })}
-          </Slider>
+          {php.length !== 0 && (
+            <React.Fragment>
+              <div
+                className="d-flex text-start mb-3"
+                style={{ marginTop: "80px" }}
+              >
+                <h4>HTML, CSS (Bootstrap) & PHP</h4>
+              </div>
+              <Slider {...settings}>
+                {php.map((php) => {
+                  return <ProjectModel key={php.id} data={php} />;
+                })}
+              </Slider>
+            </React.Fragment>
+          )}
 
-          <div className="d-flex text-start mb-3" style={{ marginTop: "80px" }}>
-            <h4>Code Igniter 4 (PHP Framework)</h4>
-          </div>
-          <Slider {...settings}>
-            {ci.map((ci) => {
-              return <ProjectModel key={ci.id} data={ci} />;
-            })}
-          </Slider>
-          <div className="d-flex text-start mb-3" style={{ marginTop: "80px" }}>
-            <h4>ReactJS</h4>
-          </div>
-          <Slider {...settings}>
-            {react.map((react) => {
-              return <ProjectModel key={react.id} data={react} />;
-            })}
-          </Slider>
+          {ci.length !== 0 && (
+            <React.Fragment>
+              <div
+                className="d-flex text-start mb-3"
+                style={{ marginTop: "80px" }}
+              >
+                <h4>Code Igniter 4 (PHP Framework)</h4>
+              </div>
+              <Slider {...settings}>
+                {ci.map((ci) => {
+                  return <ProjectModel key={ci.id} data={ci} />;
+                })}
+              </Slider>
+            </React.Fragment>
+          )}
+
+          {react.length !== 0 && (
+            <React.Fragment>
+              <div
+                className="d-flex text-start mb-3"
+                style={{ marginTop: "80px" }}
+              >
+                <h4>ReactJS</h4>
+              </div>
+              <Slider {...settings}>
+                {react.map((react) => {
+                  return <ProjectModel key={react.id} data={react} />;
+                })}
+              </Slider>
+            </React.Fragment>
+          )}
+
+          {vue.length !== 0 && (
+            <React.Fragment>
+              <div
+                className="d-flex text-start mb-3"
+                style={{ marginTop: "80px" }}
+              >
+                <h4>VueJS</h4>
+              </div>
+              <Slider {...settings}>
+                {vue.map((vue) => {
+                  return <ProjectModel key={vue.id} data={vue} />;
+                })}
+              </Slider>
+            </React.Fragment>
+          )}
         </div>
       </motion.div>
     </section>
