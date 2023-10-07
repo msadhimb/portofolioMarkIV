@@ -2,6 +2,15 @@ import React from "react";
 import "./Skill.css";
 import Particle from "../Particle/Particle";
 import { motion } from "framer-motion";
+import { AiFillHtml5 } from "react-icons/ai";
+import { FaBootstrap, FaCss3Alt, FaLaravel, FaPhp } from "react-icons/fa";
+import {
+  BiLogoJavascript,
+  BiLogoReact,
+  BiLogoTailwindCss,
+  BiLogoVuejs,
+} from "react-icons/bi";
+import { DiCodeigniter } from "react-icons/di";
 
 const Skill = () => {
   return (
@@ -16,104 +25,37 @@ const Skill = () => {
       >
         {/* <Particles className='particles' params={particleConfig}/> */}
         <Particle />
-
-        <div className="row d-flex justify-content-center skillProgress">
-          <motion.h2
-            className="text-white title"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2, type: "spring", delay: 1.3 }}
-          >
-            Skill
-          </motion.h2>
-
-          {/* html&css */}
-          <motion.div
-            className="col-md-3 d-flex flex-column align-items-center mt-3 p-0"
-            initial={{ rotate: 180, x: 250, opacity: 0 }}
-            animate={{ rotate: 0, x: 0, opacity: 1 }}
-            transition={{ duration: 2, type: "spring", delay: 1.5 }}
-          >
-            <motion.div
-              className="circular-progress-html-css d-flex justify-content-center align-items-center"
-              initial={{
-                background: "conic-gradient(#d51e46, 0deg, #ededed 0deg)",
-              }}
-              animate={{
-                background: "conic-gradient(#d51e46, 260deg, #ededed 0deg)",
-              }}
-              transition={{ duration: 0.8, type: "spring", delay: 2.5 }}
-            >
-              <span className="progress-value-html-css text-white">80%</span>
-            </motion.div>
-            <span className="mt-2 text-white">HTML & CSS</span>
-          </motion.div>
-
-          {/* php */}
-          <motion.div
-            className="col-md-3 d-flex flex-column align-items-center mt-3 p-0"
-            initial={{ rotate: 180, x: -250, opacity: 0 }}
-            animate={{ rotate: 0, x: 0, opacity: 1 }}
-            transition={{ duration: 2, type: "spring", delay: 1.5 }}
-          >
-            <motion.div
-              className="circular-progress-php d-flex justify-content-center align-items-center"
-              initial={{
-                background: "conic-gradient(#d51e46, 0deg, #ededed 0deg)",
-              }}
-              animate={{
-                background: "conic-gradient(#d51e46, 180deg, #ededed 0deg)",
-              }}
-              transition={{ duration: 0.8, type: "spring", delay: 2.5 }}
-            >
-              <span className="progress-value-php text-white">50%</span>
-            </motion.div>
-            <span className="mt-2 text-white">PHP</span>
-          </motion.div>
-
-          {/* js */}
-          <motion.div
-            className="col-md-3 d-flex flex-column align-items-center mt-3 p-0"
-            initial={{ rotate: 180, x: 250, opacity: 0 }}
-            animate={{ rotate: 0, x: 0, opacity: 1 }}
-            transition={{ duration: 2, type: "spring", delay: 1.5 }}
-          >
-            <motion.div
-              className="circular-progress-javascript d-flex justify-content-center align-items-center"
-              initial={{
-                background: "conic-gradient(#d51e46, 0deg, #ededed 0deg)",
-              }}
-              animate={{
-                background: "conic-gradient(#d51e46, 180deg, #ededed 0deg)",
-              }}
-              transition={{ duration: 0.8, type: "spring", delay: 2.5 }}
-            >
-              <span className="progress-value-javascript text-white">50%</span>
-            </motion.div>
-            <span className="mt-2 text-white">JavaScript</span>
-          </motion.div>
-
-          {/* english */}
-          <motion.div
-            className="col-md-3 d-flex flex-column align-items-center mt-3 p-0"
-            initial={{ rotate: 180, x: -250, opacity: 0 }}
-            animate={{ rotate: 0, x: 0, opacity: 1 }}
-            transition={{ duration: 2, type: "spring", delay: 1.5 }}
-          >
-            <motion.div
-              className="circular-progress-english d-flex justify-content-center align-items-center"
-              initial={{
-                background: "conic-gradient(#d51e46, 0deg, #ededed 0deg)",
-              }}
-              animate={{
-                background: "conic-gradient(#d51e46, 180deg, #ededed 0deg)",
-              }}
-              transition={{ duration: 0.8, type: "spring", delay: 2.5 }}
-            >
-              <span className="progress-value-english text-white">50%</span>
-            </motion.div>
-            <span className="mt-2 text-white">English</span>
-          </motion.div>
+        <div className="row d-flex justify-content-center align-items-center h-100 skillProgress">
+          <div className="col-md-3 col-6">
+            <AiFillHtml5 className="icon" color="#E44D26" size={100} />
+          </div>
+          <div className="col-md-3 col-6">
+            <FaCss3Alt className="icon" color="#1572B6" size={100} />
+          </div>
+          <div className="col-md-3 col-6">
+            <FaBootstrap className="icon" color="#7952B3" size={100} />
+          </div>
+          <div className="col-md-3 col-6">
+            <BiLogoTailwindCss className="icon" color="#06B6D4" size={100} />
+          </div>
+          <div className="col-md-3 col-6">
+            <BiLogoJavascript className="icon" color="#F7DF1E" size={100} />
+          </div>
+          <div className="col-md-3 col-6">
+            <BiLogoReact className="icon" color="#61DAFB" size={100} />
+          </div>
+          <div className="col-md-3 col-6">
+            <BiLogoVuejs className="icon" color="#42B883" size={100} />
+          </div>
+          <div className="col-md-3 col-6">
+            <FaPhp className="icon" color="#6F42C1" size={100} />
+          </div>
+          <div className="col-md-3 col-6">
+            <FaLaravel className="icon" color="#FF2D20" size={100} />
+          </div>
+          <div className="col-md-3 col-6">
+            <DiCodeigniter className="icon" color="#DE4C36" size={100} />
+          </div>
         </div>
       </motion.div>
     </>

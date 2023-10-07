@@ -1,51 +1,52 @@
-.desc{
-    text-align: center;
+.desc {
+  text-align: justify;
 }
 
-.udinusImg{
-    width: 400px;
+.udinusImg {
+  width: 23rem;
 }
 
-.desc h3{
-    font-size: 26px;
+.desc h3 {
+  font-size: 26px;
+  text-align: center;
 }
 
 .desc p {
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .desc {
+    text-align: start;
+  }
+
+  .desc h3 {
+    font-size: 18px;
+  }
+
+  .desc p {
+    font-size: 12px;
+  }
+
+  .udinusImg {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .desc {
+    text-align: start;
+  }
+
+  .desc h3 {
+    font-size: 26px;
+  }
+
+  .desc p {
     font-size: 15px;
-}
+  }
 
-@media (min-width: 768px){
-    .desc{
-        text-align: start;
-    }
-
-    .desc h3{
-        font-size: 18px;
-    }
-
-    .desc p {
-        font-size: 12px;
-    }
-    
-    .udinusImg{
-        width: 300px;
-    }
-}
-
-@media (min-width: 992px){
-    .desc{
-        text-align: start;
-    }
-
-    .desc h3{
-        font-size: 26px;
-    }
-    
-    .desc p {
-        font-size: 15px;
-    }
-
-    .udinusImg{
-        width: 400px;
-    }
+  .udinusImg {
+    width: 400px;
+  }
 }

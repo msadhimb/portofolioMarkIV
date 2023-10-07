@@ -21,9 +21,9 @@ const Particle = () => {
       init={particlesInit}
       loaded={particlesLoaded}
       params={particleConfig}
-      className='particles'
+      className="particles"
     />
   );
 };
 
-export default Particle
+export default Particle;

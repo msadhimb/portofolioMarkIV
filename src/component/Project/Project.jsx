@@ -1,11 +1,12 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import axios from "axios";
 import ProjectModel from "./ProjectModel";
 import { motion } from "framer-motion";
 import "./Project.css";
+import { db } from "../../firebase";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 
-function SampleNextArrow(props) {
+const SampleNextArrow = (props) => {
   const { style, onClick } = props;
   return (
     <div
@@ -14,7 +15,7 @@ function SampleNextArrow(props) {
       onClick={onClick}
     ></div>
   );
-}
+};
 
 const SamplePrevArrow = (props) => {
   const { style, onClick } = props;
@@ -27,149 +28,167 @@ const SamplePrevArrow = (props) => {
   );
 };
 
-export default class Project extends Component {
-  state = {
-    post: [],
-    php: [],
-    ci: [],
-    react: [],
-  };
+const Project = () => {
+  const [post, setPost] = useState([]);
+  const [php, setPhp] = useState([]);
+  const [ci, setCi] = useState([]);
+  const [react, setReact] = useState([]);
 
-  getPostAPI = () => {
-    axios.get("projectList.json").then((res) => {
-      this.setState({
-        post: res.data.js,
-        php: res.data.php,
-        ci: res.data.ci,
-        react: res.data.react,
-      });
+  const getData = async () => {
+    const response = await getDocs(
+      query(collection(db, "project"), orderBy("created_at", "asc"))
+    );
+
+    const dataTemp = response.docs.map((doc) => ({
+      ...doc.data(),
+      id: doc.id,
+    }));
+
+    setPost([]);
+    setPhp([]);
+    setCi([]);
+    setReact([]);
+
+    dataTemp.filter((data) => {
+      switch (data.tech) {
+        case "javascript":
+          setPost((post) => [...post, data]);
+          break;
+        case "php":
+          setPhp((php) => [...php, data]);
+          break;
+        case "codeigniter4":
+          setCi((ci) => [...ci, data]);
+          break;
+        case "reactjs":
+          setReact((react) => [...react, data]);
+          break;
+        default:
+          break;
+      }
     });
   };
 
-  componentDidMount() {
-    this.getPostAPI();
-  }
+  var settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    arrows: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          autoplay: false,
+          arrows: true,
+          nextArrow: <SampleNextArrow />,
+          prevArrow: <SamplePrevArrow />,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          dots: false,
+          autoplay: false,
+          arrows: true,
+          nextArrow: <SampleNextArrow />,
+          prevArrow: <SamplePrevArrow />,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          autoplay: false,
+          arrows: true,
+          nextArrow: <SampleNextArrow />,
+          prevArrow: <SamplePrevArrow />,
+        },
+      },
+    ],
+  };
 
-  render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      pauseOnHover: true,
-      arrows: true,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-            autoplay: false,
-            arrows: true,
-            nextArrow: <SampleNextArrow />,
-            prevArrow: <SamplePrevArrow />,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            initialSlide: 1,
-            dots: false,
-            autoplay: false,
-            arrows: true,
-            nextArrow: <SampleNextArrow />,
-            prevArrow: <SamplePrevArrow />,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: false,
-            autoplay: false,
-            arrows: true,
-            nextArrow: <SampleNextArrow />,
-            prevArrow: <SamplePrevArrow />,
-          },
-        },
-      ],
-    };
-    return (
-      <section id="projects">
-        <motion.div
-          className="container"
-          style={{
-            paddingTop: "100px",
-            paddingBottom: "50px",
-            overflowY: "hidden",
-            height: "auto",
-          }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2, type: "spring", delay: 1 }}
+  useEffect(() => {
+    getData();
+  }, []);
+
+  return (
+    <section id="projects">
+      <motion.div
+        className="container"
+        style={{
+          paddingTop: "100px",
+          paddingBottom: "50px",
+          overflowY: "hidden",
+          height: "auto",
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, type: "spring", delay: 1 }}
+      >
+        <div className="d-flex justify-content-center">
+          <h2>Project</h2>
+        </div>
+        <div
+          className="row d-flex justify-content-center m-0"
+          style={{ padding: "0 25px" }}
         >
-          <div className="d-flex justify-content-center">
-            <h2>Project</h2>
-          </div>
-          <div
-            className="row d-flex justify-content-center m-0"
-            style={{ padding: "0 25px" }}
-          >
-            <div className="d-flex text-start mt-5 mb-3">
-              <h4>HTML, CSS (Bootstrtap) & Javascript</h4>
-            </div>
-            <Slider {...settings}>
-              {this.state.post.map((js) => {
-                return <ProjectModel key={js.id} data={js} />;
-              })}
-            </Slider>
+          {post.length !== 0 && (
+            <React.Fragment>
+              <div className="d-flex text-start mt-5 mb-3">
+                <h4>HTML, CSS (Bootstrtap) & Javascript</h4>
+              </div>
+              <Slider {...settings}>
+                {post.map((js) => {
+                  return <ProjectModel key={js.id} data={js} />;
+                })}
+              </Slider>
+            </React.Fragment>
+          )}
 
-            <div
-              className="d-flex text-start mb-3"
-              style={{ marginTop: "80px" }}
-            >
-              <h4>HTML, CSS (Bootstrap) & PHP</h4>
-            </div>
-            <Slider {...settings}>
-              {this.state.php.map((php) => {
-                return <ProjectModel key={php.id} data={php} />;
-              })}
-            </Slider>
-
-            <div
-              className="d-flex text-start mb-3"
-              style={{ marginTop: "80px" }}
-            >
-              <h4>Code Igniter 4 (PHP Framework)</h4>
-            </div>
-            <Slider {...settings}>
-              {this.state.ci.map((ci) => {
-                return <ProjectModel key={ci.id} data={ci} />;
-              })}
-            </Slider>
-            <div
-              className="d-flex text-start mb-3"
-              style={{ marginTop: "80px" }}
-            >
-              <h4>ReactJS</h4>
-            </div>
-            <Slider {...settings}>
-              {this.state.react.map((react) => {
-                return <ProjectModel key={react.id} data={react} />;
-              })}
-            </Slider>
+          <div className="d-flex text-start mb-3" style={{ marginTop: "80px" }}>
+            <h4>HTML, CSS (Bootstrap) & PHP</h4>
           </div>
-        </motion.div>
-      </section>
-    );
-  }
-}
+          <Slider {...settings}>
+            {php.map((php) => {
+              return <ProjectModel key={php.id} data={php} />;
+            })}
+          </Slider>
+
+          <div className="d-flex text-start mb-3" style={{ marginTop: "80px" }}>
+            <h4>Code Igniter 4 (PHP Framework)</h4>
+          </div>
+          <Slider {...settings}>
+            {ci.map((ci) => {
+              return <ProjectModel key={ci.id} data={ci} />;
+            })}
+          </Slider>
+          <div className="d-flex text-start mb-3" style={{ marginTop: "80px" }}>
+            <h4>ReactJS</h4>
+          </div>
+          <Slider {...settings}>
+            {react.map((react) => {
+              return <ProjectModel key={react.id} data={react} />;
+            })}
+          </Slider>
+        </div>
+      </motion.div>
+    </section>
+  );
+};
+
+export default Project;
