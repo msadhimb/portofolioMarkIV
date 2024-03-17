@@ -3,7 +3,7 @@
 }
 
 .udinusImg {
-  width: 23rem;
+  width: 95%;
 }
 
 .desc h3 {
@@ -16,20 +16,10 @@
 }
 
 @media (min-width: 768px) {
-  .desc {
-    text-align: justify;
-  }
-
   .desc h3 {
-    font-size: 18px;
     text-align: start;
   }
-
-  .desc p {
-    font-size: 12px;
-  }
-
   .udinusImg {
-    width: 300px;
+    width: 80%;
   }
 }
