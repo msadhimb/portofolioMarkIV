@@ -38,6 +38,7 @@ const Experience = () => {
             const desc = item.deskripsi.split("-");
             return (
               <VerticalTimelineElement
+                key={item.id}
                 className="vertical-timeline-element--work"
                 contentArrowStyle={
                   item.status === "selesai"
@@ -86,9 +87,13 @@ const Experience = () => {
                 <h5 className="mt-2 text-start">{item.nama_project}</h5>
                 <div>
                   <ul>
-                    {desc.map((descItem) => {
+                    {desc.map((descItem, index) => {
                       if (descItem === "") return;
-                      return <li className="text-start">{descItem}</li>;
+                      return (
+                        <li className="text-start" key={index}>
+                          {descItem}
+                        </li>
+                      );
                     })}
                   </ul>
                 </div>
